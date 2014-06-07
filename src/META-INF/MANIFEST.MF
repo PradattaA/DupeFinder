@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: com.neelhridoy.dupfinder.gui.DupeFinderGui
+Created-By: Pradatta Adhikary
+Application-Name: Duplicate Finder
+Application-SymbolicName: DupeFinder
+Application-Version: 1.0
+Bundle-Localization: en
+

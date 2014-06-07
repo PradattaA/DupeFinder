@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document    : log4j.xml
+    Created on  : 2013-05-05, 14:17:38
+    Author      : Pradatta Adhikary
+    Description : Purpose of the document follows.
+-->
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <!-- For console message with System.err -->
+    <appender name="error" class="org.apache.log4j.ConsoleAppender">
+        <param name="threshold" value="warn"/>
+        <param name="target" value="System.err"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %-5p : %m%n"/>
+        </layout>
+    </appender>
+
+    <!-- For console message with System.out -->
+    <appender name="info" class="org.apache.log4j.ConsoleAppender">
+        <param name="threshold" value="debug"/>
+        <param name="target" value="System.out"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %-5p : %m%n"/>
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="debug"/>
+            <param name="LevelMax" value="info"/>
+        </filter>
+    </appender>
+
+    <!-- For writing to log.log file -->
+    <appender name="file" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="log.log"/>
+        <param name="MaxFileSize" value="1MB"/>
+        <param name="MaxBackupIndex" value="1"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %-5p : %m%n"/>
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="info"/>
+            <param name="LevelMax" value="warn"/>
+        </filter>
+    </appender>
+
+    <!-- For writing to exception.log file -->
+    <appender name="exception" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="error.log"/>
+        <param name="MaxFileSize" value="1MB"/>
+        <param name="MaxBackupIndex" value="1"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %-5p : %m%n"/>
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="error"/>
+            <param name="LevelMax" value="error"/>
+        </filter>
+    </appender>
+
+    <!-- Declaring roots -->
+    <root>
+        <priority value="debug"></priority>
+        <appender-ref ref="info"/>
+        <appender-ref ref="error"/>
+        <appender-ref ref="file"/>
+        <appender-ref ref="exception"/>
+    </root>
+</log4j:configuration>
