@@ -25,7 +25,6 @@ import java.util.HashSet;
  * Time: 2:25 PM
  */
 public class DupeFinderGui {
-    private static final Logger LOGGER = LoggerFactory.getLogger(DupeFinderGui.class);
     private final Collection<String> driveToSearch = new HashSet<>();
     Timer blinkTimer;
     String activeText = null;
@@ -274,7 +273,7 @@ public class DupeFinderGui {
                     }
                 }
             } catch (BadLocationException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                e.printStackTrace();
             } finally {
                 blinkTimer.stop();
             }

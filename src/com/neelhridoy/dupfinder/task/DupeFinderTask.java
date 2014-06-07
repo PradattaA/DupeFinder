@@ -27,7 +27,6 @@ public class DupeFinderTask extends SwingWorker<List<String>, String> {
     private final Collection<String> driveToSearch;
     File sourceFile;
     boolean driveLevelFileFoundFlag = false;
-    private int progress = 0;
     private List<String> foundFiles;
     private long fileCount;
 
