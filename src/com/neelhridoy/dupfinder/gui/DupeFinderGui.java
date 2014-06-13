@@ -49,7 +49,7 @@ public class DupeFinderGui {
 
     public DupeFinderGui() {
         setDefaultStyleUI();
-
+        toggleToolState(true);
         progressBar.setVisible(false);
         browse.addActionListener(new ActionListener() {
             @Override
@@ -178,6 +178,7 @@ public class DupeFinderGui {
         checkBoxPanel.updateUI();
         browse.setEnabled(state);
         find.setEnabled(state);
+        stop.setEnabled(!state);
     }
 
     private void loadDriveList() {
