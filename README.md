@@ -18,7 +18,7 @@ On the first build, Maven will download all the dependencies from the internet a
 
 ### Overview
 
-After building DupeFinder for the first time, you can load the project into your IDE and run the application. I recommend using [**IntelliJ IDEA**](www.jetbrains.com/idea/), because the GUI is designed using INteliJ GUI BUilder Plugin, which may not work in anyother IDE. As DupeFinder is a standard Maven project, you can import it into your IDE using the root pom.xml file. In **IntelliJ**, choose Open Project from the Quick Start box or choose Open from the File menu and select the root **pom.xml** file.
+After building DupeFinder for the first time, you can load the project into your IDE and run the application. I recommend using [**IntelliJ IDEA**](http://www.jetbrains.com/idea/), because the GUI is designed using INteliJ GUI BUilder Plugin, which may not work in anyother IDE. As DupeFinder is a standard Maven project, you can import it into your IDE using the root pom.xml file. In **IntelliJ**, choose Open Project from the Quick Start box or choose Open from the File menu and select the root **pom.xml** file.
 
 After opening the project in IntelliJ, double check that the Java SDK is properly configured properly for the project:
 
