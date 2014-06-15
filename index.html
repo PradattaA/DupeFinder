@@ -64,11 +64,16 @@
 <p>Open the File menu and select Project Structure
 In the SDKs section, ensure that a 1.7 JDK is selected (create one if none exist)
 In the Project section, ensure the Project language level is set to 7.0 as DupeFinder makes use of several Java 7 language features
-DupeFinder comes with sample configuration that should work out-of-the-box for development. Use the following options to create a run configuration:</p>
+DupeFinder comes with sample configuration that should work out-of-the-box for development. </p>
+
+<h3>
+<a name="program-configuration" class="anchor" href="#program-configuration"><span class="octicon octicon-link"></span></a>Program Configuration</h3>
+
+<p><strong>Use the following options to create a run configuration:</strong></p>
 
 <ul>
 <li>
-<strong>Main Class:</strong>           <code>com.neelhridoy.dupfinder.gui.DupeFinderGui</code>
+<strong>Main Class:</strong>       <code>com.neelhridoy.dupfinder.gui.DupeFinderGui</code>
 </li>
 <li>
 <strong>Working directory:</strong>    <code>$MODULE_DIR$</code>
@@ -79,7 +84,12 @@ DupeFinder comes with sample configuration that should work out-of-the-box for d
 <li>
 <strong>Source directory:</strong>     <code>$MODULE_DIR$/src/</code>
 </li>
-</ul><p>The working directory should be the DupeFinder subdirectory. In <strong>IntelliJ</strong>, using $MODULE_DIR$ accomplishes this automatically. </p>
+</ul><p>The working directory should be the DupeFinder subdirectory. In <strong>IntelliJ</strong>, using <code>$MODULE_DIR$</code> accomplishes this automatically. </p>
+
+<h3>
+<a name="library-dependency" class="anchor" href="#library-dependency"><span class="octicon octicon-link"></span></a>Library Dependency</h3>
+
+<p><img src="http://neelhriody.github.io/DupeFinder/images/dependency_diagram.png" alt=""></p>
 
 <h2>
 <a name="screen-shots" class="anchor" href="#screen-shots"><span class="octicon octicon-link"></span></a>Screen Shots</h2>
@@ -106,6 +116,16 @@ DupeFinder comes with sample configuration that should work out-of-the-box for d
       </div>
     </div>
 
-  
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-51949418-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
