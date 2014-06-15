@@ -36,7 +36,7 @@ DupeFinder comes with sample configuration that should work out-of-the-box for d
 - **Resource directory:** 	`$MODULE_DIR$/resources/`
 - **Source directory:** 	`$MODULE_DIR$/src/`
 
-The working directory should be the DupeFinder subdirectory. In **IntelliJ**, using $MODULE_DIR$ accomplishes this automatically.
+The working directory should be the DupeFinder subdirectory. In **IntelliJ**, using `$MODULE_DIR$` accomplishes this automatically.
 
 ### Library Dependency
 
