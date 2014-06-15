@@ -2,7 +2,7 @@
 
 DupeFinder
 ==========
-This a Duplicate File Finder Application. This application searches all drives and directories from the system for duplicate files. User need to select a file and then search. After a complete scan this application will find all duplicated copies of the given file. User can scan entire system of specify limited drives for the scanning process.
+This a Duplicate File Finder Application. This application searches all drives and directories from the system for duplicate files. User need to select a file and then search. After a complete scan this application will find all duplicated copies of the given file. User can scan entire system or specify limited drives for the scanning process.
 
 ## Requirements
 - Windows or Linux
