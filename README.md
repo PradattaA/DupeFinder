@@ -12,11 +12,11 @@ DupeFinder is a standard Maven project. Simply run the following command from th
     mvn clean install
 On the first build, Maven will download all the dependencies from the internet and cache them in the local repository (~/.m2/repository), which can take a considerable amount of time. Subsequent builds will be faster.
 
-## Running Presto in your IDE
+## Running DupeFinder in your IDE
 
 ### Overview
 
-After building DupeFinder for the first time, you can load the project into your IDE and run the application. I recommend using IntelliJ IDEA, because the GUI is designed using INteliJ GUI BUilder Plugin, which may not work in anyother IDE. As DupeFinder is a standard Maven project, you can import it into your IDE using the root pom.xml file. In IntelliJ, choose Open Project from the Quick Start box or choose Open from the File menu and select the root pom.xml file.
+After building DupeFinder for the first time, you can load the project into your IDE and run the application. I recommend using [**IntelliJ IDEA**](www.jetbrains.com/idea/), because the GUI is designed using INteliJ GUI BUilder Plugin, which may not work in anyother IDE. As DupeFinder is a standard Maven project, you can import it into your IDE using the root pom.xml file. In **IntelliJ**, choose Open Project from the Quick Start box or choose Open from the File menu and select the root **pom.xml** file.
 
 After opening the project in IntelliJ, double check that the Java SDK is properly configured properly for the project:
 
@@ -25,9 +25,11 @@ In the SDKs section, ensure that a 1.7 JDK is selected (create one if none exist
 In the Project section, ensure the Project language level is set to 7.0 as DupeFinder makes use of several Java 7 language features
 DupeFinder comes with sample configuration that should work out-of-the-box for development. Use the following options to create a run configuration:
 
-- Main Class: com.neelhridoy.dupfinder.gui.DupeFinderGui
-- Working directory: $MODULE_DIR$
-- Resource directory: $MODULE_DIR$/resources/
-- Source directory: $MODULE_DIR$/src/
+- **Main Class:** 			`com.neelhridoy.dupfinder.gui.DupeFinderGui`
+- **Working directory:** 	`$MODULE_DIR$`
+- **Resource directory:** 	`$MODULE_DIR$/resources/`
+- **Source directory:** 	`$MODULE_DIR$/src/`
 
-The working directory should be the DupeFinder subdirectory. In IntelliJ, using $MODULE_DIR$ accomplishes this automatically. 
+The working directory should be the DupeFinder subdirectory. In **IntelliJ**, using $MODULE_DIR$ accomplishes this automatically. 
+
+
