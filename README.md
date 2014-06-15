@@ -9,14 +9,14 @@ This a Duplicate File Finder Application. This application searches all drives a
 ## Building DupeFinder
 DupeFinder is a standard Maven project. Simply run the following command from the project root directory:
 
-mvn clean install
+    mvn clean install
 On the first build, Maven will download all the dependencies from the internet and cache them in the local repository (~/.m2/repository), which can take a considerable amount of time. Subsequent builds will be faster.
 
 ## Running Presto in your IDE
 
 ### Overview
 
-After building Presto for the first time, you can load the project into your IDE and run the application. I recommend using IntelliJ IDEA, because the GUI is designed using INteliJ GUI BUilder Plugin, which may not work in anyother IDE. As DupeFinder is a standard Maven project, you can import it into your IDE using the root pom.xml file. In IntelliJ, choose Open Project from the Quick Start box or choose Open from the File menu and select the root pom.xml file.
+After building DupeFinder for the first time, you can load the project into your IDE and run the application. I recommend using IntelliJ IDEA, because the GUI is designed using INteliJ GUI BUilder Plugin, which may not work in anyother IDE. As DupeFinder is a standard Maven project, you can import it into your IDE using the root pom.xml file. In IntelliJ, choose Open Project from the Quick Start box or choose Open from the File menu and select the root pom.xml file.
 
 After opening the project in IntelliJ, double check that the Java SDK is properly configured properly for the project:
 
