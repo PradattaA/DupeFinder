@@ -34,4 +34,11 @@ DupeFinder comes with sample configuration that should work out-of-the-box for d
 
 The working directory should be the DupeFinder subdirectory. In **IntelliJ**, using $MODULE_DIR$ accomplishes this automatically. 
 
+## Screen Shots
+
+
+![](/resources/image/Screenshot.png)
+
+![](/resources/image/Screenshot1.png)
+
 
