@@ -25,12 +25,22 @@ After opening the project in IntelliJ, double check that the Java SDK is properl
 Open the File menu and select Project Structure
 In the SDKs section, ensure that a 1.7 JDK is selected (create one if none exist)
 In the Project section, ensure the Project language level is set to 7.0 as DupeFinder makes use of several Java 7 language features
-DupeFinder comes with sample configuration that should work out-of-the-box for development. Use the following options to create a run configuration:
+DupeFinder comes with sample configuration that should work out-of-the-box for development.
+
+### Program Configuration
+
+**Use the following options to create a run configuration:**
 
 - **Main Class:** 			`com.neelhridoy.dupfinder.gui.DupeFinderGui`
 - **Working directory:** 	`$MODULE_DIR$`
 - **Resource directory:** 	`$MODULE_DIR$/resources/`
 - **Source directory:** 	`$MODULE_DIR$/src/`
+
+### Library Dependency
+
+
+![](/resources/image/dependency_diagram.png)
+
 
 The working directory should be the DupeFinder subdirectory. In **IntelliJ**, using $MODULE_DIR$ accomplishes this automatically. 
 
