@@ -64,6 +64,12 @@
             <artifactId>slf4j-migrator</artifactId>
             <version>1.7.5</version>
         </dependency>
+        <dependency>
+            <groupId>de.sciss</groupId>
+            <artifactId>weblaf</artifactId>
+            <version>1.28</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
     <build>
         <sourceDirectory>src</sourceDirectory>
